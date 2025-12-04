@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Store</title>
+<style>
+body{font-family:Arial;margin:0;background:#f4f4f4}
+header{background:#222;color:#fff;padding:15px;text-align:center;font-size:24px}
+nav{text-align:center;margin:10px}
+nav a{margin:10px;color:#222;text-decoration:none;font-weight:bold}
+.container{width:90%;margin:auto}
+.card{background:#fff;padding:15px;margin:15px 0;border-radius:6px;box-shadow:0 0 4px rgba(0,0,0,.1)}
+.product{display:flex;justify-content:space-between;margin:8px 0}
+button,input,textarea{width:100%;padding:8px;margin:5px 0;border:1px solid #ccc;border-radius:4px}
+button{background:#222;color:#fff;cursor:pointer}
+.price{color:#555;font-weight:bold}
+</style>
+</head>
+<body>
+
+<header>Online Store</header>
+<nav><a href="#products">Products</a><a href="#cart">Cart</a><a href="#checkout">Checkout</a></nav>
+<div class="container">
+
+<section id="products" class="card">
+<h2>Products</h2>
+<div class="product"><span>👕 T-Shirt</span><span class="price">₹499</span></div>
+<div class="product"><span>🎧 Headphones</span><span class="price">₹999</span></div>
+<div class="product"><span>📿 Handmade Bracelet</span><span class="price">₹199</span></div>
+<button>Add to Cart</button>
+</section>
+
+<section id="cart" class="card">
+<h2>Shopping Cart</h2>
+<p>Items: 2</p>
+<p>Total: ₹1498</p>
+<button>Proceed to Checkout</button>
+</section>
+
+<section id="checkout" class="card">
+<h2>Checkout</h2>
+<input type="text" placeholder="Full Name">
+<input type="text" placeholder="Address">
+<input type="text" placeholder="Phone Number">
+<button>Place Order</button>
+</section>
+
+<footer style="text-align:center;padding:10px;background:#222;color:#fff;margin-top:10px">
+© 2025 Simple Store
+</footer>
+
+</div>
+</body>
+</html>
